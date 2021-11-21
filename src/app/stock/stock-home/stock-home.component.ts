@@ -18,13 +18,45 @@ export class StockHomeComponent implements OnInit {
     this.feedData();
   }
 
-  feedData(){
-    const dummy = [
-      new Product(),
-      new Product(),
-      new Product(),
-    ]
+  feedData() {
+    const dummy: Product[] = [
+      {
+        name: 'Mac Book',
+        stock: 1,
+        price: 20000,
+        image:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
+      },
+      {
+        name: 'Mac Book',
+        stock: 2,
+        price: 20000,
+        image:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
+      },
+      {
+        name: 'Mac Book',
+        stock: 3,
+        price: 20000,
+        image:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
+      },
+      {
+        name: 'Mac Book',
+        stock: 4,
+        price: 20000,
+        image:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
+      },
+      {
+        name: 'Mac Book',
+        stock: 5,
+        price: 20000,
+        image:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
+      },
+    ];
 
-    this.dataSource.data = dummy
+    this.dataSource.data = dummy;
   }
 }
