@@ -42,7 +42,12 @@
   </div>
 </div>
 
-<table mat-table [dataSource]="['1', '2', '3', '4']" class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="image">
+    <th mat-header-cell *matHeaderCellDef>image</th>
+    <td mat-cell *matCellDef="let data">{{ data }}</td>
+  </ng-container>
+
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef>name</th>
     <td mat-cell *matCellDef="let data">{{ data }}</td>
@@ -58,6 +63,11 @@
     <td mat-cell *matCellDef="let data">{{ data }}</td>
   </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="['name', 'price', 'stock']"></tr>
-  <tr mat-row *matRowDef="let row; columns: ['name', 'price', 'stock']"></tr>
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef>action</th>
+    <td mat-cell *matCellDef="let data">{{ data }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
