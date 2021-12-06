@@ -21,36 +21,36 @@ export class StockHomeComponent implements OnInit {
   feedData() {
     const dummy: Product[] = [
       {
-        name: 'Mac Book',
-        stock: 1,
+        name: 'Et deleniti ipsum itaque odio reiciendis animi ipsum nemo. In et aliquam ut ut. Eius omnis qui repudiandae repudiandae. Molestiae illum aperiam ut aut ut.',
+        stock: 11111,
         price: 20000,
         image:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
       },
       {
         name: 'Mac Book',
-        stock: 2,
+        stock: 22222,
         price: 20000,
         image:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
       },
       {
         name: 'Mac Book',
-        stock: 3,
+        stock: 33333,
         price: 20000,
         image:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
       },
       {
         name: 'Mac Book',
-        stock: 4,
+        stock: 44444,
         price: 20000,
         image:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
       },
       {
         name: 'Mac Book',
-        stock: 5,
+        stock: 55555,
         price: 20000,
         image:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Gatto_europeo4.jpg/250px-Gatto_europeo4.jpg',
